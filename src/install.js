@@ -1,10 +1,10 @@
-import AxioCalendar from "./components/AxioCalendar.vue";
+import VueAxioCalendar from "./components/VueAxioCalendar.vue";
 
 const VueAxioCalendar = {
     install(Vue) {
         // Let's register our component globally
         // https://vuejs.org/v2/guide/components-registration.html
-        Vue.component("vue-axio-calendar", AxioCalendar);
+        Vue.component("vue-axio-calendar", VueAxioCalendar);
     }
 };
 

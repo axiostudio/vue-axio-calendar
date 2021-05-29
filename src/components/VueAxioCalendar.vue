@@ -48,17 +48,12 @@
             </table>
         </div>
 
-        <!-- <pre>{{ current }}</pre> -->
-        <!-- <pre>{{ min }}</pre> -->
-        <!-- <pre>{{ max }}</pre> -->
-        <!-- <pre>{{ datainfo }}</pre> -->
-
     </div>
 </template>
 
 <script>
 export default {
-    name: 'ComponentCalendar',
+    name: 'VueAxioCalendar',
 
     props: {
         current: String,
