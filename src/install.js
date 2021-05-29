@@ -1,16 +1,16 @@
-import EventCalendar from "./components/EventCalendar.vue";
+import AxioCalendar from "./components/AxioCalendar.vue";
 
-const VueEventCalendar = {
+const VueAxioCalendar = {
     install(Vue) {
         // Let's register our component globally
         // https://vuejs.org/v2/guide/components-registration.html
-        Vue.component("vue-event-calendar", EventCalendar);
+        Vue.component("vue-axio-calendar", AxioCalendar);
     }
 };
 
 // Automatic installation if Vue has been added to the global scope.
 if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(VueEventCalendar);
+    window.Vue.use(VueAxioCalendar);
 }
 
-export default VueEventCalendar;
+export default VueAxioCalendar;

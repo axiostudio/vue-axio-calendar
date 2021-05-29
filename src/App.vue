@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<EventCalendar
+		<AxioCalendar
 			:datainfo="calendar.datainfo"
 			:current="calendar.current"
 			:min="calendar.min"
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import EventCalendar from "./components/EventCalendar.vue";
+import AxioCalendar from "./components/AxioCalendar.vue";
 
 export default {
 	name: "App",
@@ -31,7 +31,7 @@ export default {
 	},
 
 	components: {
-		EventCalendar,
+		AxioCalendar,
 	},
 
 	methods: {

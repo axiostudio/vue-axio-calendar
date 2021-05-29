@@ -1,4 +1,4 @@
-# vue-event-calendar
+# Vue Axio Calendar
 
 ## Project setup
 ```
