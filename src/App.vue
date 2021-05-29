@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import VueAxioCalendar from "./components/VueAxioCalendar.vue";
+import VueAxioCalendar from "./components/AxioCalendar.vue";
 
 export default {
 	name: "App",
