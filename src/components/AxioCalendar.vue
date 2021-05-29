@@ -247,7 +247,7 @@ $spacer: .4rem;
             text-transform: capitalize;
 
             .calendar-header-month-name{
-                margin-right: .4rem;
+                margin-right: $spacer;
             }
 
             // .calendar-header-month-year{}
