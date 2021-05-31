@@ -1,18 +1,18 @@
 <template>
-    <div class="calendar">
+    <div class="axio-calendar">
 
-        <div class="calendar-header">
-            <div class="calendar-header-month">
-                <span class="calendar-header-month-name">{{ monthName }}</span>
-                <span class="calendar-header-month-year">{{ year }}</span>
+        <div class="axio-calendar-header">
+            <div class="axio-calendar-header-month">
+                <span class="axio-calendar-header-month-name">{{ monthName }}</span>
+                <span class="axio-calendar-header-month-year">{{ year }}</span>
             </div>
-            <div class="calendar-header-nav">
-                <button type="button" class="calendar-header-nav-prev" @click="prevMonth()">&lt;</button>
-                <button type="button" class="calendar-header-nav-next" @click="nextMonth()">&gt;</button>
+            <div class="axio-calendar-header-nav">
+                <button type="button" class="axio-calendar-header-nav-prev" @click="prevMonth()">&lt;</button>
+                <button type="button" class="axio-calendar-header-nav-next" @click="nextMonth()">&gt;</button>
             </div>
         </div>
 
-        <div class="calendar-body">
+        <div class="axio-calendar-body">
             <table>
                 <thead>
                     <tr>
@@ -223,8 +223,8 @@ $active: #ffd300;
 $holiday: #F8EFBA;
 $spacer: .4rem;
 
-.calendar{
-    .calendar-header{
+.axio-calendar{
+    .axio-calendar-header{
         border-top: 1px solid $gray;
         border-bottom: 1px solid $gray;
         display: flex;
@@ -237,35 +237,35 @@ $spacer: .4rem;
             padding: $spacer;
         }
 
-        .calendar-header-month{
+        .axio-calendar-header-month{
             text-align: left;
             text-transform: capitalize;
 
-            .calendar-header-month-name{
+            .axio-calendar-header-month-name{
                 margin-right: $spacer;
             }
 
-            // .calendar-header-month-year{}
+            // .axio-calendar-header-month-year{}
         }
 
-        .calendar-header-nav{
+        .axio-calendar-header-nav{
             flex: 0 0 auto;
             width: auto;
 
-            .calendar-header-nav-prev,
-            .calendar-header-nav-next{
+            .axio-calendar-header-nav-prev,
+            .axio-calendar-header-nav-next{
                 margin: 0;
                 padding: 0;
                 border: 0;
                 background: none;
             }
 
-            // .calendar-header-nav-prev{}
-            // .calendar-header-nav-next{}
+            // .axio-calendar-header-nav-prev{}
+            // .axio-calendar-header-nav-next{}
         }
     }
 
-    .calendar-body{
+    .axio-calendar-body{
         border-bottom: 1px solid $gray;
 
         table{
