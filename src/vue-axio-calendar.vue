@@ -61,7 +61,9 @@ export default {
         max: String,
         datainfo: {
             type: Object,
-            default: () => { return {} }
+            default: () => { 
+                return {} 
+            }
         }
     },
 
@@ -210,6 +212,7 @@ export default {
     },
 
     mounted(){
+        console.log('Setup current date in calendar');
         this.currentdate = (this.current) ? new Date(this.current) : new Date();
     }
 
