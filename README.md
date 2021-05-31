@@ -1,6 +1,6 @@
 # Vue Axio Calendar
 
-The **Vue Axio Calendar** is a simply and powerfull talbed calendar component for Vue.
+The Vue Axio Calendar is a simple and powerful table calendar component for Vue.
 
 You can:
 
