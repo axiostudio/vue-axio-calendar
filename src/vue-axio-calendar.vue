@@ -16,14 +16,14 @@
             <table>
                 <thead>
                     <tr>
-                        <th v-for="name, k in daysName" :key="k">
+                        <th v-for="(name, k) in daysName" :key="k">
                             <div>{{ name }}</div>
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="week, w in monthDays" :key="w">
-                        <td v-for="day, d in week" :key="d">
+                    <tr v-for="(week, w) in monthDays" :key="w">
+                        <td v-for="(day, d) in week" :key="d">
 
                             <button
                                 v-if="day"
@@ -171,7 +171,7 @@ export default {
 
     methods: {
         nextMonth(){
-            console.log('nextMonth');
+            // console.log('nextMonth');
             this.currentdate = new Date(this.currentdate.setMonth(this.currentdate.getMonth() + 1));
 
             this.$emit('calendar:change', {
@@ -181,7 +181,7 @@ export default {
         },
 
         prevMonth(){
-            console.log('prevMonth');
+            // console.log('prevMonth');
             this.currentdate = new Date(this.currentdate.setMonth(this.currentdate.getMonth() - 1));
 
             this.$emit('calendar:change', {
