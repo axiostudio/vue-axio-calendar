@@ -1,6 +1,6 @@
 {
   "name": "vue-axio-calendar",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "main": "dist/vue-axio-calendar.umd.js",
   "module": "dist/vue-axio-calendar.esm.js",
   "unpkg": "dist/vue-axio-calendar.min.js",
