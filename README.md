@@ -5,8 +5,8 @@ The Vue Axio Calendar is a simple and powerful table calendar component for Vue.
 You can:
 
 - navigate trought months (next and prev)
-- select a date
-- set a min and a max date selectable
+- pick a date
+- set a range of pickable dates (from min to max)
 - add a count of items per date
 
 ## Installation
