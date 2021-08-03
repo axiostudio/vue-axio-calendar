@@ -5,7 +5,7 @@ Aggiungi tutti i file `git add -A`
 Fail il commit delle modifiche `git commit -m "Fix"`
 Scrivi le info `npm version patch -m "Fix"`
 Carica le modifiche `git push --follow-tags`
-Pubblicale `npm publish`
+Pubblicale `git pull`
 
 ```
 yarn build

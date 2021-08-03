@@ -171,7 +171,7 @@ export default {
 
     methods: {
         nextMonth(){
-            // console.log('nextMonth');
+            console.log('emit nextMonth');
             this.currentdate = new Date(this.currentdate.setMonth(this.currentdate.getMonth() + 1));
 
             this.$emit('calendar:change', {
@@ -181,7 +181,7 @@ export default {
         },
 
         prevMonth(){
-            // console.log('prevMonth');
+            console.log('emit prevMonth');
             this.currentdate = new Date(this.currentdate.setMonth(this.currentdate.getMonth()));
 
             this.$emit('calendar:change', {
@@ -219,6 +219,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@use 'sass:math';
 
 $gray: #d9e3ea;
 $active: #ffd300;
@@ -323,8 +325,8 @@ $spacer: .4rem;
                                 top: $spacer * -1;
                                 right: $spacer * -1;
                                 background: $gray;
-                                padding: ($spacer / 4) ($spacer / 2);
-                                border-radius: $spacer / 2;
+                                padding: math.div($spacer, 4) math.div($spacer, 2);
+                                border-radius: math.div($spacer, 2);
                             }
 
                             &.active{
