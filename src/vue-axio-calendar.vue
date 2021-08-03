@@ -182,7 +182,7 @@ export default {
 
         prevMonth(){
             // console.log('prevMonth');
-            this.currentdate = new Date(this.currentdate.setMonth(this.currentdate.getMonth() - 1));
+            this.currentdate = new Date(this.currentdate.setMonth(this.currentdate.getMonth()));
 
             this.$emit('calendar:change', {
                 month: this.month,
